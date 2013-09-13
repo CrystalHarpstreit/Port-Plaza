@@ -1,0 +1,15 @@
+.redLine { 
+	position: relative;
+	border-bottom-width: 100%;
+	border-bottom: solid #962f33;
+}
+
+.redLine img {
+	position: relative;
+	height: 100px;
+	width: 100px;
+}
+
+p .logoText{
+	color: gray;
+}

@@ -1,0 +1,26 @@
+body {
+	margin: 100%;
+}
+
+
+
+.redLine img {
+	position: relative;
+	height: 100px;
+	width: 100px;
+}
+
+p.logoText {
+	font-size: 2em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: gray;
+}
+
+div.menu h1 {
+	float: right;
+	font-size: 200px;
+}
+
+#header .menu ul h1{
+	list-style-type: none;
+}
