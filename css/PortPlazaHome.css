@@ -1,15 +1,62 @@
-.redLine { 
-	position: relative;
-	border-bottom-width: 100%;
-	border-bottom: solid #962f33;
+body {
+	margin: 100%;
 }
 
-.redLine img {
+p.logoText{
 	position: relative;
-	height: 100px;
-	width: 100px;
+	top: 100px;
+	right: 580px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	color: #77787c;
 }
 
-p .logoText{
-	color: gray;
+p.logoText2{
+	position: relative;
+	bottom: 100px;
+	right: 293px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	color: #77787c;
+}
+
+.redBorder ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #962f33;
+    position: relative;
+	bottom: 230px;
+}
+
+.redBorder li {
+    float: right;
+    list-style-type: none;
+}
+
+.redBorder a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    margin: 20px 40px 20px 40px;
+}
+
+.redBorder img {
+	position: relative;
+	left: 270px;
+	bottom: 5px;
+	height: 170px;
+	width: 170px;
+	z-index: 1;
+}
+
+div.menu h1 {
+	float: right;
+	font-size: 200px;
+}
+
+#header .menu ul h1{
+	list-style-type: none;
 }
