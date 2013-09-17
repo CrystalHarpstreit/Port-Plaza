@@ -232,13 +232,12 @@ a.storeInfo {
 /********Footer*********/
 
 p.copyRite {
-	float: right;
 	font-family: Myriad Pro, sans-serif;
 	font-size: .75em;
 	color: #666;
 	border-top: thin solid #999;
 	width: 100%;
-	margin: 0 
+	margin: 0; 
 }
 
 footer img {
