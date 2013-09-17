@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Port Plaza Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+<title>Port Plaza Home</title> 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="css/cssReset.css" media="all">
 <link rel="stylesheet" type="text/css" href="css/PortPlazaHome.css" media="all">
@@ -22,27 +23,22 @@
 <body>
 	<header>
 		<div class="header">
-			<img src="images/logo.jpg" class="logo">
-			<div class="menuList">
-				<ul>
-					<li>
-						<a href ="#" class="topMenu">Home/Merchants</a>
-					</li>
-					<li>
-						<a href ="#" class="topMenu">Directions</a>
-					</li>
-					<li>
-						<a href ="#" class="topMenu">Privacy</a>
-					</li>
-					<li>
-						<a href ="#" class="topMenu">Contact</a>
-					</li>
+			<nav class="clearfix">
+				<ul class="clearfix">
+					<li><a href ="#" class="topMenu">Contact</a></li>
+					<li><a href ="#" class="topMenu">Privacy</a></li>
+					<li><a href ="#" class="topMenu">Directions</a></li>
+					<li><a href ="#" class="topMenu">Home/Merchants</a></li>
 				</ul>
-			</div>
+				<a href="#" id="pull">Menu</a>
+			</nav>
+		</div>
+		<div id="headerLogo">
+			<p class="logoText">Welcome to</p>
+			<img src="images/logo.jpg" class="logo">
+			<p class="logoText2">.com</p>
 		</div>
 	</header>
-	<p class="logoText">Welcome to</p>
-	<p class="logoText2">.com</p>
 	<!--  Carousel - consult the Twitter Bootstrap docs at
 		        http://twitter.github.com/bootstrap/javascript.html#carousel -->
 	<div id="carousel">
