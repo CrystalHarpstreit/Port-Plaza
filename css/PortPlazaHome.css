@@ -1,6 +1,6 @@
 html, body {
 	width: 100%;
-}
+} 
 
 header {
 	padding-bottom: 250px;
@@ -175,25 +175,31 @@ nav a#pull {
   .logoText2 { display: none; }
 }    
 
-/*Middle Content*/
+/**************Middle Content***************/
 
-/*#this-carousel-id {
-	width: 150%;
-	margin: 0 auto;
+@media only screen and (max-width: 400px) {
+    body { font-size:50%;}
 }
-*/
+
+@media only screen and (max-width: 800px) {
+    body { font-size:100%;}
+}  
+     
+@media only screen and (max-width: 1100px) {
+    body { font-size:100%;}
+} 
 
 #middleContent{
-	padding: 2% 0 0 2%;
+    padding: 2% 0 0 2%;
 }
 
 .item img {
-	width: 100%;
+    width: 100%;
 }
 
 #middleContent ul p {
-	color: #666;
-	font-family: Myriad Pro, sans-serif;
+    color: #666;
+    font-family: Myriad Pro, sans-serif;
 }
 
 .shopMenu {
@@ -204,31 +210,77 @@ nav a#pull {
     float: left;
     width: 15%;
     font-family: Myriad Pro, sans-serif;
-	font-size: 1.2em;
-	color: #962f33;
-	font-weight: heavy;
+    font-size: 1.2em;
+    color: #962f33;
+    font-weight: heavy;
 }
 
 h3.Menu {
-	line-height: 120%;
-	margin-left: 30%;
-	font-weight: bold;
-	font-size: 1.125em;
-	font-family: Myriad Pro, sans-serif; 
+    line-height: 120%;
+    margin-left: 30%;
+    font-weight: bold;
+    font-size: 1.125em;
+    font-family: Myriad Pro, sans-serif; 
 }
 
 a.storeInfo {
-	font-family: Myriad Pro, sans-serif;
-	font-size: 1.125em;
-	color: #999;
-	line-height: 130%;
-	max-width: 25%
+    font-family: Myriad Pro, sans-serif;
+    font-size: 1.125em;
+    color: #999;
+    line-height: 130%;
+    max-width: 25%
 }
 
 .section li {
-	margin-left: 30%;
+    margin-left: 30%;
 
 }
+
+@media screen and (max-width: 1100px) {
+    .section {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+
+    }
+
+@media screen and (max-width: 1100px) {
+    .section {
+        padding-bottom: 0px;
+    }
+
+@media screen and (max-width: 1100px) {
+    h3.Menu {
+        padding-top: 30px;
+    }
+
+@media screen and (max-width: 500px) {
+    .section {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+@media screen and (max-width: 500px) {
+    h3.Menu {
+        padding-top: 30px;
+    }
+
+/*********Carousel*********/
+
+@media screen and (max-width: 500px) {
+    #carousel {
+        display: none;
+    }
+
+@media screen and (max-width: 500px) {
+    .logo {
+        display: inline;
+        position: relative;
+        top: 60px;
+        left: 115px;
+        margin: 0 auto;
+    }
+
 /********Footer*********/
 
 #siteFooter {
@@ -240,7 +292,7 @@ a.storeInfo {
 	border-top: thin solid #999;
 }
 
-#siteFooter img {
+#siteFooter img.SBKlogo {
 	width: 7%;
 	height: auto; 
 	float: right;
@@ -248,7 +300,7 @@ a.storeInfo {
 	bottom: 55px;
 }
 
-p.copyRite {
+#siteFooter p.copyRite {
 	font-family: Myriad Pro, sans-serif;
 	font-size: .90em;
 	color: #666; 
