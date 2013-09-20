@@ -12,14 +12,15 @@ header {
 
 .logo { 
 	max-width: 30%;
+    min-width: 140px;
 	position: relative;
 	bottom: 75px;
-	left: 250px;
+    left: 250px;
 }
 
 .logoText {
 	font-family: Myriad Pro, sans-serif;
-	font-size: 2em;
+	font-size: 1.7em;
 	padding-right: 39%;
 	padding-top: 2%;
 	color: #999;
@@ -27,11 +28,11 @@ header {
 
 .logoText2 {
 	font-family: Myriad Pro, sans-serif;
-	font-size: 2em;
+	font-size: 1.7em;
 	color: #999;
 	padding-left: 60%;
 	position: relative;
-	bottom: 210px;
+	bottom: 205px;
 }
 
 a:hover {
@@ -41,7 +42,7 @@ a:hover {
 /********Responsive Menu*********/
 
 nav {  
-    height: 95px;  
+    height: 45px;  
     width: 100%;  
     background: #962f33;  
     font-size: 13pt;  
@@ -81,7 +82,8 @@ nav a {
     color: #fff;  
     display: inline-block;  
     text-decoration: none;  
-    padding: 30px 80px 0 15px;
+    /*padding: 30px 80px 0 15px;*/
+    line-height: 45px;
 } 
  
 nav li:last-child a {  
@@ -111,16 +113,10 @@ nav a#pull {
         width: 50%;  
         float: left;  
         position: relative;  
+        left: 15px;
+        font-size: 1em;
     }  
-    /*nav li a {  
-        border-bottom: 1px solid #7b282b;  
-        border-right: 1px solid #7b282b;  
-    }  
-    nav a {  
-        text-align: left;  
-        width: 100%;  
-        text-indent: 25px;  
-    }*/ 
+   
 }  
 
 @media only screen and (max-width : 480px) {  
@@ -195,7 +191,7 @@ nav a#pull {
 }
 
 .container-fluid {
-    margin-left: 10%;
+    margin: 0 auto;
     width: 90%;
 }
 
@@ -209,7 +205,11 @@ nav a#pull {
     width: 200px;
 }
 
-h3.Menu {
+.row-fluid.header {
+    padding-bottom: 30px;
+}
+
+h3.menu, h3.title-wrapper {
     line-height: 120%;
     margin-left: 30%;
     font-weight: bold;
@@ -219,8 +219,8 @@ h3.Menu {
 }
 
 li {
-    width: 160px;
-    font-size: 1.1em;
+    width: 150px;
+    font-size: 1em;
 }
 
 .row-fluid h3 li {
@@ -233,47 +233,189 @@ a.storeInfo {
     line-height: 130%;
 }
 
-@media screen and (max-width: 1100px) {
-    .row-fluid {
-        width: 50%;
+/* Walter */
+
+.row-fluid > .span3 {
+    width: 100%;
+    float: left;
+    margin: 0;
+}
+
+.m-left{
+    width: 50%;
+    float: left;
+    clear: left;
+}
+
+.m-right{
+    width: 50%;
+    float: right;
+    clear: right;
+}
+
+.container-fluid .row-fluid {
+    min-width: 160px;
+}
+
+.row-fluid .span3 .left {
+    float: left;
+    clear: left;
+    width: 100%;
+}
+
+.row-fluid .span3 .right {
+    float: right;
+    clear: right;
+    width: 100%;
+}
+
+.col-1 {
+    width: 16.66%;
+}
+
+.col-2 {
+    width: 33.33%;
+}
+
+.row-fluid .span3.menu {
+    width: 160px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 850px) {
+    div.container-fluid .row-fluid {
+        width: 20%;
+        text-align: center;
+        min-width: 0;
+    }
+
+    #content .row-fluid.header {
+        width: 100%;
+        text-align: center;
+    }
+
+    #content .row-fluid.header > .span3 {
+        width: 100%;
+        margin: 0;
+    }
+
+    #content .header ul > li {
         margin: 0 auto;
-        padding-bottom: 100px;
-
     }
+
+    #content .title-wrapper {
+        width: 100%;
+    }
+
+    #content .title {
+        display: inline-block;
+    }
+
+    #content .col-left {
+        margin: 0 5% 0 10%;
+    }
+
+    #content .col-mid {
+        margin: 0 5%;
+    }
+
+    #content .col-right {
+        margin: 0 10% 0 5%;
+    }
+
+    #content .row-fluid > .span3 {
+        width: auto;
+    }
+
+    #content .row-fluid .span3.menu {
+        width: 100%;
+    }
+
+    #content .m-right, 
+    #content .m-left {
+        width: 100%;
+    }
+
+}
 
 @media screen and (max-width: 1100px) {
-    .row-fluid {
-        padding-bottom: 0px;
+    .row-fluid .span3 .right {
+        float: left;
     }
 
-@media screen and (max-width: 1100px) {
-    h3.Menu {
-        padding-top: 30px;
+    .m-right{
+        width: 50%;
+        float: left;
+        clear: left;
     }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .container-fluid .row-fluid {
+        width: 25%;
+        margin: 0 auto;
+    }
+}
+
+/* End Walter */
 
 @media screen and (max-width: 500px) {
-    .row-fluid   {
+
+    #content {
+        text-align: center;
+    }
+
+    #content .row-fluid   {
         width: 100%;
         padding-bottom: 0px;
     }
 
-@media screen and (max-width: 500px) {
-    h3.Menu {
+    #content h3.span3,
+    #content .m-left, 
+    #content .m-right {
+        width: 100%;
+    }
+
+
+    h3.menu {
         padding-top: 30px;
     }
 
+    #headerLogo {
+        text-align: center;
+    }
+
+    #headerLogo .logo {
+        left: auto;
+    }
+}
+
 /*********Carousel*********/
+
+@media screen and (max-width: 1000px) {
+    header {
+        padding-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        padding-bottom: 250px;
+    }
+}
 
 @media screen and (max-width: 500px) {
     #carousel {
         display: none;
     }
+}
 
 @media screen and (max-width: 500px) {
     .logo {
         display: inline;
         position: relative;
         top: 60px;
-        left: 115px;
         margin: 0 auto;
     }
+}

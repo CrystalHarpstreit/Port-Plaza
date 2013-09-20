@@ -10,10 +10,11 @@
 }
 
 #siteFooter img.SBKlogo {
-	width: 7%; 
-	float: right;
 	position: relative;
-	bottom: 55px;
+	bottom: 45px;
+	right: 4px;
+	width: 88px;
+	float: right;
 }
 
 #siteFooter p.copyRite {
@@ -21,7 +22,6 @@
 	font-size: .90em;
 	color: #666; 
     width: 10%;
-	float: right;
-	position: relative;
-	left: 130px;
+	position: absolute;
+	right: 79px;
 }
