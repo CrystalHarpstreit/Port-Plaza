@@ -1,0 +1,27 @@
+/********Footer*********/
+
+#siteFooter {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 200px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	border-top: thin solid #999;
+}
+
+#siteFooter img.SBKlogo {
+	width: 7%; 
+	float: right;
+	position: relative;
+	bottom: 55px;
+}
+
+#siteFooter p.copyRite {
+	font-family: Myriad Pro, sans-serif;
+	font-size: .90em;
+	color: #666; 
+    width: 10%;
+	float: right;
+	position: relative;
+	left: 130px;
+}

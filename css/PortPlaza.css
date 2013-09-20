@@ -11,7 +11,7 @@ header {
 }
 
 .logo { 
-	max-width: 40%;
+	max-width: 30%;
 	position: relative;
 	bottom: 75px;
 	left: 250px;
@@ -19,7 +19,7 @@ header {
 
 .logoText {
 	font-family: Myriad Pro, sans-serif;
-	font-size: 2.25em;
+	font-size: 2em;
 	padding-right: 39%;
 	padding-top: 2%;
 	color: #999;
@@ -27,11 +27,11 @@ header {
 
 .logoText2 {
 	font-family: Myriad Pro, sans-serif;
-	font-size: 2.25em;
+	font-size: 2em;
 	color: #999;
-	padding-left: 80%;
+	padding-left: 60%;
 	position: relative;
-	bottom: 270px;
+	bottom: 210px;
 }
 
 a:hover {
@@ -80,11 +80,8 @@ nav li {
 nav a {  
     color: #fff;  
     display: inline-block;  
-    /*width: 100px;*/  
     text-decoration: none;  
-    /*line-height: 70px;*/    
-    /*text-shadow: 1px 1px 0px #283744;*/  
-    padding: 30px 80px 0 0;
+    padding: 30px 80px 0 15px;
 } 
  
 nav li:last-child a {  
@@ -197,47 +194,47 @@ nav a#pull {
     width: 100%;
 }
 
-#middleContent ul p {
-    color: #666;
-    font-family: Myriad Pro, sans-serif;
+.container-fluid {
+    margin-left: 10%;
+    width: 90%;
 }
 
-.shopMenu {
-    width: 100%;
-}
-
-.section {
+.row-fluid {
     float: left;
-    width: 15%;
     font-family: Myriad Pro, sans-serif;
-    font-size: 1.2em;
-    color: #962f33;
-    font-weight: heavy;
+    width: 250px;
+}
+
+.row-fluid .span3 {
+    width: 200px;
 }
 
 h3.Menu {
     line-height: 120%;
     margin-left: 30%;
     font-weight: bold;
-    font-size: 1.125em;
+    font-size: 1.1em;
     font-family: Myriad Pro, sans-serif; 
+    color: #962f33;
+}
+
+li {
+    width: 160px;
+    font-size: 1.1em;
+}
+
+.row-fluid h3 li {
+    width: 100%;
+    font-family: Myriad Pro, sans-serif;
 }
 
 a.storeInfo {
-    font-family: Myriad Pro, sans-serif;
-    font-size: 1.125em;
     color: #999;
     line-height: 130%;
-    max-width: 25%
-}
-
-.section li {
-    margin-left: 30%;
-
 }
 
 @media screen and (max-width: 1100px) {
-    .section {
+    .row-fluid {
         width: 50%;
         margin: 0 auto;
         padding-bottom: 100px;
@@ -245,7 +242,7 @@ a.storeInfo {
     }
 
 @media screen and (max-width: 1100px) {
-    .section {
+    .row-fluid {
         padding-bottom: 0px;
     }
 
@@ -255,7 +252,7 @@ a.storeInfo {
     }
 
 @media screen and (max-width: 500px) {
-    .section {
+    .row-fluid   {
         width: 100%;
         padding-bottom: 0px;
     }
@@ -280,31 +277,3 @@ a.storeInfo {
         left: 115px;
         margin: 0 auto;
     }
-
-/********Footer*********/
-
-#siteFooter {
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 300px;
-	padding-top: 10px;
-	padding-bottom: 40px;
-	border-top: thin solid #999;
-}
-
-#siteFooter img.SBKlogo {
-	width: 7%;
-	height: auto; 
-	float: right;
-	position: relative;
-	bottom: 55px;
-}
-
-#siteFooter p.copyRite {
-	font-family: Myriad Pro, sans-serif;
-	font-size: .90em;
-	color: #666; 
-	float: right;
-	position: relative;
-	left: 120px;
-}
