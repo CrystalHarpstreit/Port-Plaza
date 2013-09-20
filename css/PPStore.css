@@ -11,6 +11,11 @@
         display: none;
 }
 
+@media screen and (max-width: 900px) {
+    .middleContent {
+        display: none;
+    }
+
 /*.StoreDays {
 	font-family: Myriad Pro, sans-serif;
 	font-size: 1.3em;
